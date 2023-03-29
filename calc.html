@@ -1,0 +1,95 @@
+<html>
+    <head> 
+        <style>
+            #main{width:300px; height: 250px; background-color: beige;}
+            input{width: 22% ; height: 43px; font-size: 30px; margin:2px; background-color:rgb(225, 219, 219);}
+            #abc{height: 50px; width:94%; background-color:aliceblue;}
+        </style>
+    </head>
+        <body>
+            <div id = "main">
+                <form name = "calculator">
+                    <input type = "text" name ="box" placeholder="0" id="abc">
+                    <br>
+                    
+                    <input type ="button" value = "1" onclick="calculator.box.value +=1">
+                    <input type = "button" value = "2" onclick="calculator.box.value+=2">
+                    <input type = "button" value = "3" onclick="calculator.box.value+=3">
+                    <input type = "button" value = "+" onclick="calculator.box.value+='+'">
+                    <br>
+                    <input type ="button" value = "4" onclick="calculator.box.value +=4">
+                    <input type = "button" value = "5" onclick="calculator.box.value+=5">
+                    <input type = "button" value = "6" onclick="calculator.box.value+=6">
+                    <input type = "button" value = "-" onclick="calculator.box.value+='-'">
+                    <br>
+                    <input type ="button" value = "7" onclick="calculator.box.value +=7">
+                    <input type = "button" value = "8" onclick="calculator.box.value+=8">
+                    <input type = "button" value = "9" onclick="calculator.box.value+=9">
+                    <input type = "button" value = "/" onclick="calculator.box.value+='/'">
+                    <br>
+                    <input type ="button" value = "c" onclick="calculator.box.value=''">
+                    <input type = "button" value = "0" onclick="calculator.box.value+=0">
+                    <input type = "button" value = "=" onclick="calculator.box.value = eval(calculator.box.value)">
+                    <input type = "button" value = "x" onclick="calculator.box.value+='*'">
+                    <br>
+
+
+
+                </form>
+
+
+
+            </div>
+            <!--<script>
+                function add(){
+                    var a = 0 , b=0;
+                    a = calculator.box.value;
+                    b = a.charAt(a.length-1);
+                    if(b=='+' || b=='-' || b=='*' || b=='/'){
+                        calculator.box.value= a.substring(0 , a.length - 1);
+                        calculator.box.value+='+';
+                    }else{
+                        calculator.box.value+='+';
+
+                    }
+                }
+
+                 function sub(){
+                    var a =0 , b=0;
+                    a = calculator.box.value;
+                    b = a.charAt(a.length-1);
+                    if(b=='+' || b=='-' || b=='/'  || b=='*'){
+                        calculator.box.value= a.substring(0 , a.length-1);
+                        calculator.box.value+='-';
+                    }else{
+                        calculator.box.value+='-';
+
+                    }
+
+                    function di(){
+                    var a =0 , b=0;
+                    a = calculator.box.value;
+                    b = a.charAt(a.length-1);
+                    if(b=='+' || b=='-' || b=='*'  || b=='/'){
+                        calculator.box.value= a.substring(0 , a.length-1);
+                        calculator.box.value+='/';
+                    }else{
+                        calculator.box.value+='/';
+
+                    }
+
+                    function mul(){
+                    var a =0 , b=0;
+                    a = calculator.box.value;
+                    b = a.charAt(a.length-1);
+                    if(b=='+' || b=='-' || b=='*'  || b=='/'){
+                        calculator.box.value= a.substring(0 , a.length-1);
+                        calculator.box.value+='*';
+                    }else{
+                        calculator.box.value+='*';
+
+                    }
+            </script>-->
+        </body>
+    
+</html>
